@@ -19,7 +19,10 @@ jobs:
       
       - name: Run linter
         run: yarn lint
-      
+        
+      - name: Run unit tests
+        run: yarn test:unit
+
       - name: Fix linter
         run: yarn lint:fix
         
