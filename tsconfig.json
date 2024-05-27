@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "useDefineForClassFields": true,
+    "skipLibCheck": true,
+    "moduleResolution": "NodeNext",
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "importHelpers": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "noResolve": false,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "allowJs": false
+  },
+  "include": ["src/**/*", "package.json", "vite.config.mts", "test/**/*"]
+}
