@@ -1,7 +1,13 @@
 name: ci-blog-project
 run-name: ${{ github.actor }} is running GitHub Actions 🚀
 
-on: [pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   Test-And-Build-Blog-Project:
