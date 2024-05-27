@@ -7,6 +7,7 @@
     "format": "prettier --write \"**/*.{mts,mjs,js,jsx,ts,tsx,json,css,scss,html}\"",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
+    "test:unit":"vitest ./test/unit/",
     "prepare": "husky",
     "dev": "vite",
     "build": "vite build"
@@ -27,7 +28,8 @@
     "husky": "^9.0.11",
     "prettier": "^3.2.5",
     "typescript": "^5.4.5",
-    "vite": "^5.2.11"
+    "vite": "^5.2.11",
+    "vitest": "^1.6.0"
   },
   "dependencies": {
     "react": "^18.3.1",
