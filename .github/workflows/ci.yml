@@ -1,10 +1,11 @@
-name: ci-tier-dashboard
+name: ci-blog-project
 run-name: ${{ github.actor }} is running GitHub Actions 🚀
 
 on: [pull_request]
 
 jobs:
-  Test-And-Build-Tier-Dashboard:
+  Test-And-Build-Blog-Project:
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,7 +20,7 @@ jobs:
       
       - name: Run linter
         run: yarn lint
-        
+
       - name: Run unit tests
         run: yarn test:unit
 
