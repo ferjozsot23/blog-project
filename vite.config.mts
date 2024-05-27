@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   server: {
-    host: 'localhost',
+    host: process.env.HOST,
     port: 4200,
     strictPort: true,
     https: false,
