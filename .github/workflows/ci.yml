@@ -1,0 +1,28 @@
+name: ci-tier-dashboard
+run-name: ${{ github.actor }} is running GitHub Actions 🚀
+
+on: [pull_request]
+
+jobs:
+  Test-And-Build-Tier-Dashboard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --immutable
+      
+      - name: Run linter
+        run: yarn lint
+      
+      - name: Fix linter
+        run: yarn lint:fix
+        
+      - name: Build
+        run: yarn build
+      
